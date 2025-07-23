@@ -99,3 +99,19 @@ console.log(Object.keys(tinderuser))
 console.log(Object.values(tinderuser))
 console.log(Object.entries(tinderuser))
 console.log(tinderuser.hasOwnProperty("name"))
+
+
+const course = {
+    coursename : "js in hindi",
+    price : 999,
+    couseInstructor : "Sai"
+}
+
+const {couseInstructor : Instructor} = course
+
+console.log(Instructor)
+
+
+// In json key and Values are Strings
+
+//  API gives json file as response or sme ti es array 
