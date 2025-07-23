@@ -16,8 +16,43 @@
 // if the a has been declared out side block and it has value then that value be printed if no modifiction are done 
 // if you declare sme variable in any block and intialize it with different value then it will not effect the global value 
 
-for(let i=0;i<1;i++){
-    console.log(1)
+// for(let i=0;i<1;i++){
+//     console.log(1)
+// }
+
+
+function one(){
+    const username="Sai"
+
+    function two(){
+        const website ="youtube"
+        console.log(username)
+    }
+    // console.log(website) // website is not defined because it is only upto the two function only 
+    two()
+}
+// one()
+
+if(true){
+    const username="Sai"
+    if(username=="Sai"){
+        const website = "youtube"
+        console.log(username+" "+website)
+    }
+    // console.log(website)
+}
+// console.log(username)
+
+
+// ++++++++++++++++++++ Intresting ++++++++++++++++
+
+console.log(addone(5))
+function addone(num){
+    return num+1
 }
 
 
+const addTwo = function(num){ // This is expression in js variable can also hold function
+    return num+2
+}
+addTwo(5) // Here there will be error because it is variable and hosting
